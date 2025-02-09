@@ -22,7 +22,7 @@ jobs:
           git config --global user.email "23f2001960@ds.study.iitm.ac.in"
           git commit -m "Automated commit - $(date)"
 
-      - name: Push changes
+      - name: Push changes - 23f2001960@ds.study.iitm.ac.in
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
