@@ -24,7 +24,7 @@ jobs:
 
       - name: Push changes - 23f2001960@ds.study.iitm.ac.in
         env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+          IITM: ${{ secrets.IITM }}
         run: |
-          git remote set-url origin https://x-access-token:${GH_PAT}@github.com/${{ github.repository }}.git
+          git remote set-url origin https://x-access-token:${IITM}@github.com/${{ github.repository }}.git
           git push origin main
